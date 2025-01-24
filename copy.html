@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Square and Cube</title>
+</head>
+<body>
+<script>
+    function square() {
+        var x = document.getElementById("Num1").value;
+        document.getElementById("Data1").innerHTML = x * x;
+    }
+
+    function cube() {
+        var y = document.getElementById("Num2").value;
+        document.getElementById("Data2").innerHTML = y * y * y;
+    }
+
+    function clr() {
+        document.getElementById("Num1").value = "";
+        document.getElementById("Num2").value = "";
+        document.getElementById("Data1").innerHTML = "";
+        document.getElementById("Data2").innerHTML = "";
+    }
+</script>
+<form>
+    <input type="text" id="Num1" placeholder="Enter the first value">
+    <input type="text" id="Num2" placeholder="Enter the second value">
+    <button type="button" onclick="square()">Square</button>
+    <button type="button" onclick="cube()">Cube</button>
+    <button type="button" onclick="clr()">Clear</button>
+    <p id="Data1"></p>
+    <p id="Data2"></p>
+</form>
+</body>
+</html>

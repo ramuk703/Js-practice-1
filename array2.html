@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array=[10,20,30,40,50,600,700,990]
+        stored=array.length
+        for(let i=0;i<stored;i++)               // Array output
+        {
+            console.log(i,array[i])
+        }
+        console.log("</br>");
+
+        for(let i=stored;i>=0;i--)              // Reverse Array 
+        {
+            console.log(i,array[i])
+        }
+        console.log("</br>")
+
+
+        // This loop worked only "ARRAY" & "STRING"
+
+
+        for(let value of array)     //This is also called loop and "OF" keyword use to only show value
+        {
+            console.log(value)
+        }
+
+        for(let show_Index_no in array)     // And "IN" use to show index number 
+        {
+            console.log(show_Index_no,array[show_Index_no])
+        }
+
+
+        // Pushing value in Array in "End Index No"
+
+        array.push(1000)
+        console.log(array)
+
+
+        // Pushing The Value in Array in "Staring Index No."
+
+        array.unshift(5555)
+        array.unshift(7777)
+        console.log(array)
+
+        //coping array in different variable but copy every behivour
+
+         stored_data=array;     // If we push the data in array then change "MAIN" array and temp array will be changed
+        console.log(array)
+
+        let stored_data_1= [...array]   // if we push the data in array But change only in "TEMPERORY Variable "
+        stored_data_1.push(9999999)
+        console.log(stored_data_1)
+
+
+
+        // Removing Array values from the "End Index NO"
+
+        array.pop()
+        console.log(array)
+
+
+        // Removing Array Values from the "Starting Index No"
+
+        array.shift()
+        console.log(array)
+
+        console.log("</br>")
+
+        // String Data Return Return data but format are changed in Comma Separated 
+        let data=['Ramuk Kumar','Hejal Jaiswal','Lakash Oberoi',"Jihal Roy"]
+        let data1=data.toString()
+        console.log(data1)
+
+
+        // String Data retrun string data but changed different format as you like for example "PIPELINE, DASH " etc
+        let data2=data.join('-')
+        console.log(data2)
+
+
+        // concatenate the two array variable
+        let arr1=[100,200,300,4000,"Ramuk Kumar","Hejal"]
+        console.log(arr1)
+
+        let arr2=["Shahnaj",20,50,"Sister"]
+        console.log(arr2)
+
+        let combine_data=arr1.concat(arr2)
+        console.log(combine_data)
+    </script>
+</body>
+</html>

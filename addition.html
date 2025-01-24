@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+</head>
+<body>
+    <script>
+        function add()
+        {
+            var a= parseInt(document.getElementById("Num 1").value);
+            var b = parseInt(document.getElementById("Num 2").value);
+            var sum = a+b;
+            document.getElementById("Data 1").innerHTML=sum;
+        }
+
+        function sub()
+        {
+            var a = parseInt(document.getElementById("Num 1").value);
+            var b = parseInt(document.getElementById("Num 2").value);
+            var sub = a-b;
+            document.getElementById("Data 1").innerHTML=sub;
+        }
+
+        function mul()
+        {
+            var a = parseInt(document.getElementById("Num 1").value);
+            var b = parseInt(document.getElementById("Num 2").value)
+            var mul=a*b;
+            document.getElementById("Data 1").innerHTML=mul;
+        }
+
+        function Div()
+        {
+            var a = parseInt(document.getElementById("Num 1").value);
+            var b = parseInt(document.getElementById("Num 2").value);
+            var div=b/a;
+            document.getElementById("Data 1").innerHTML=div;
+        }
+
+        function clr()
+        {
+            document.getElementById("Num 1").value="";
+            document.getElementById("Data 1").innerHTML="";
+            document.getElementById("Num 2").value="";
+            //document.getElementById("")
+        }
+    </script>
+    <form>
+        <input type="text" id="Num 1" placeholder="Enter the First Number ">
+        <input type="text" id="Num 2" placeholder="Enter the Second Number">
+        <button type="button" onclick="add()">Additin</button>
+        <button type="button" onclick="sub()">Subtraction</button>
+        <button type="button" onclick="mul()">Multiplication</button>
+        <button type="button" onclick="Div()">Division</button>
+        <button type="button" onclick="clr()">Clear</button>
+    </form>
+    <p id="Data 1"
+</body>
+</html>

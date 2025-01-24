@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alert</title>
+</head>
+<body>
+    <script>
+        function image_load()
+        {
+            alert("Image is loaded sucessfullY")
+        }
+
+        function image_error()
+        {
+            alert("Image is not loaded properrly")
+        }
+    </script>
+    <img src="/new_collection.jpg" onload="image_load()" onerror="image_error()">
+</body>
+</html>
